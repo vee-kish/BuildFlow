@@ -1,0 +1,149 @@
+.project-card {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+  padding: var(--space-20);
+  background-color: var(--color-surface);
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-md);
+  box-shadow: var(--shadow-xs);
+  text-align: left;
+  font-family: inherit;
+  width: 100%;
+}
+
+.project-card--clickable {
+  cursor: pointer;
+  transition: border-color var(--transition-fast),
+    box-shadow var(--transition-fast);
+}
+
+.project-card--clickable:hover {
+  border-color: var(--color-border-strong);
+  box-shadow: var(--shadow-sm);
+}
+
+.project-card__top {
+  display: flex;
+  align-items: flex-start;
+  justify-content: space-between;
+  gap: var(--space-12);
+}
+
+.project-card__name {
+  margin: 0;
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-semi);
+  color: var(--color-text);
+}
+
+.project-card__meta {
+  display: flex;
+  align-items: center;
+  gap: var(--space-4);
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.project-card__meta svg {
+  flex-shrink: 0;
+}
+
+.project-card__progress-head {
+  display: flex;
+  justify-content: space-between;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  margin-bottom: var(--space-4);
+}
+
+.project-card__progress-head strong {
+  color: var(--color-text);
+  font-weight: var(--font-weight-semi);
+}
+
+.project-card__bar {
+  height: 6px;
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.project-card__bar-fill {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.project-card__stats {
+  display: flex;
+  align-items: center;
+  gap: var(--space-16);
+  flex-wrap: wrap;
+  padding-top: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+.project-card__stat {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.project-card__stat--danger {
+  color: var(--color-danger);
+  font-weight: var(--font-weight-medium);
+}
+
+.project-card__footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-12);
+  padding-top: var(--space-12);
+  border-top: 1px solid var(--color-border);
+}
+
+.project-card__team {
+  display: flex;
+  align-items: center;
+}
+
+.project-card__team--empty {
+  font-size: var(--text-sm);
+  color: var(--color-neutral);
+}
+
+.project-card__avatar {
+  margin-right: -8px;
+  border: 2px solid var(--color-surface);
+}
+
+.project-card__more {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  min-width: 28px;
+  height: 28px;
+  padding: 0 var(--space-4);
+  margin-left: var(--space-8);
+  font-size: var(--text-xs);
+  font-weight: var(--font-weight-semi);
+  color: var(--color-muted);
+  background-color: var(--color-surface-alt);
+  border: 2px solid var(--color-surface);
+  border-radius: var(--radius-full);
+}
+
+.project-card__due {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--space-4);
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+  white-space: nowrap;
+}

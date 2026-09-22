@@ -1,0 +1,27 @@
+.loading-state {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: var(--space-8);
+  padding: var(--space-32) var(--space-16);
+}
+
+.loading-state__spinner {
+  color: var(--color-accent);
+  animation: spin 0.9s linear infinite;
+}
+
+.loading-state__label {
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.loading-state__skeleton-row {
+  width: 100%;
+  height: 44px;
+}
+
+.loading-state__skeleton-row:not(:last-child) {
+  margin-bottom: var(--space-4);
+}

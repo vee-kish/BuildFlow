@@ -1,0 +1,88 @@
+/* Team modal styles */
+.team-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.team-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+}
+
+.team-form__hint {
+  margin: 0;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.team-manage__member {
+  display: flex;
+  align-items: center;
+  gap: var(--space-12);
+  padding: var(--space-12);
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-sm);
+}
+
+.team-manage__name {
+  margin: 0;
+  font-weight: var(--font-weight-semi);
+  color: var(--color-text);
+}
+
+.team-manage__email {
+  margin: 2px 0 0;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.team-projects {
+  border: 1px solid var(--color-border);
+  border-radius: var(--radius-sm);
+  padding: var(--space-12) var(--space-16) var(--space-16);
+  margin: 0;
+}
+
+.team-projects legend {
+  padding: 0 var(--space-4);
+}
+
+.team-projects__list {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-8);
+  margin-top: var(--space-8);
+}
+
+.team-projects__option {
+  display: flex;
+  align-items: center;
+  gap: var(--space-8);
+  padding: var(--space-8);
+  border-radius: var(--radius-sm);
+  cursor: pointer;
+}
+
+.team-projects__option:hover {
+  background-color: var(--color-surface-alt);
+}
+
+.team-projects__option input[type="checkbox"] {
+  width: 18px;
+  height: 18px;
+  accent-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.team-projects__name {
+  font-size: var(--text-sm);
+  color: var(--color-text);
+}
+
+@media (max-width: 640px) {
+  .team-form__row {
+    grid-template-columns: 1fr;
+  }
+}

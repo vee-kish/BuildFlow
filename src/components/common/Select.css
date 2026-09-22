@@ -1,0 +1,17 @@
+.select__control {
+  display: flex;
+}
+
+.select__input {
+  appearance: none;
+  -webkit-appearance: none;
+  padding-right: 40px;
+  cursor: pointer;
+}
+
+.select__chevron {
+  position: absolute;
+  right: var(--space-12);
+  pointer-events: none;
+  color: var(--color-muted);
+}

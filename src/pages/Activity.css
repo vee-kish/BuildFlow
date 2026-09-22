@@ -1,0 +1,37 @@
+.activity {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.activity__toolbar {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-end;
+  gap: var(--space-12);
+}
+
+.activity__search {
+  flex: 1 1 240px;
+}
+
+.activity__controls {
+  display: flex;
+  align-items: flex-end;
+  gap: var(--space-8);
+  flex-wrap: wrap;
+}
+
+.activity__select {
+  min-width: 160px;
+}
+
+@media (max-width: 640px) {
+  .activity__controls {
+    width: 100%;
+  }
+  .activity__select {
+    flex: 1 1 0;
+    min-width: 0;
+  }
+}

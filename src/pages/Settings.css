@@ -1,0 +1,192 @@
+.settings {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.settings__stack {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.settings-form {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-16);
+}
+
+.settings-form__row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: var(--space-16);
+}
+
+.settings-form__actions {
+  display: flex;
+  gap: var(--space-8);
+  justify-content: flex-end;
+  padding-top: var(--space-8);
+}
+
+/* Toggle row */
+.settings-toggle {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-12);
+  cursor: pointer;
+}
+
+.settings-toggle input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin-top: 2px;
+  accent-color: var(--color-accent);
+  flex-shrink: 0;
+}
+
+.settings-toggle__label {
+  display: block;
+  font-weight: var(--font-weight-medium);
+  color: var(--color-text);
+}
+
+.settings-toggle__hint {
+  display: block;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+/* Generic settings row with action */
+.settings-row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-16);
+  flex-wrap: wrap;
+}
+
+.settings-row__text {
+  min-width: 0;
+}
+
+.settings-row__title {
+  margin: 0;
+  font-weight: var(--font-weight-semi);
+  color: var(--color-text);
+}
+
+.settings-row__desc {
+  margin: 2px 0 0;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.settings-row--danger .settings-row__title {
+  color: var(--color-danger);
+}
+
+.settings-confirm {
+  margin: 0;
+  color: var(--color-muted);
+  line-height: 1.6;
+}
+
+/* Storage */
+.storage__head {
+  display: flex;
+  justify-content: space-between;
+  align-items: baseline;
+  margin-bottom: var(--space-8);
+}
+
+.storage__used {
+  font-size: var(--text-base);
+  color: var(--color-text);
+}
+
+.storage__pct {
+  font-weight: var(--font-weight-semi);
+  color: var(--color-primary);
+}
+
+.storage__bar {
+  height: 10px;
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-full);
+  overflow: hidden;
+}
+
+.storage__fill {
+  height: 100%;
+  background-color: var(--color-accent);
+  border-radius: var(--radius-full);
+  transition: width var(--transition-slow);
+}
+
+.storage__actions {
+  margin-top: var(--space-16);
+  display: flex;
+  justify-content: flex-end;
+}
+
+/* Billing */
+.billing {
+  display: flex;
+  flex-direction: column;
+  gap: var(--space-12);
+}
+
+.billing__plan {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--space-12);
+  padding: var(--space-16);
+  background-color: var(--color-surface-alt);
+  border-radius: var(--radius-sm);
+}
+
+.billing__plan-name {
+  margin: 0;
+  font-size: var(--text-md);
+  font-weight: var(--font-weight-semi);
+  color: var(--color-primary);
+}
+
+.billing__plan-price {
+  margin: 2px 0 0;
+  font-size: var(--text-sm);
+  color: var(--color-muted);
+}
+
+.billing__status {
+  text-transform: capitalize;
+  font-size: var(--text-sm);
+  font-weight: var(--font-weight-medium);
+  color: var(--color-success);
+  background-color: var(--color-success-bg);
+  padding: var(--space-4) var(--space-12);
+  border-radius: var(--radius-full);
+}
+
+.billing__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: var(--space-8) 0;
+  border-bottom: 1px solid var(--color-border);
+  font-size: var(--text-base);
+  color: var(--color-muted);
+}
+
+.billing__row strong {
+  color: var(--color-text);
+  font-weight: var(--font-weight-semi);
+}
+
+@media (max-width: 640px) {
+  .settings-form__row {
+    grid-template-columns: 1fr;
+  }
+}

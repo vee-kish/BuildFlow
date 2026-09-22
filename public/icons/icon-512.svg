@@ -1,0 +1,8 @@
+<!-- Placeholder app icon (512). Replace with real PNG exports
+     (icon-192.png, icon-512.png, maskable variants) before PWA release. -->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="BuildFlow Kenya placeholder icon">
+  <rect width="512" height="512" rx="96" fill="#0F2747"/>
+  <path d="M139 315a117 117 0 0 1 234 0z" fill="#E67E22"/>
+  <rect x="107" y="315" width="298" height="48" rx="24" fill="#E67E22"/>
+  <rect x="235" y="139" width="42" height="80" rx="21" fill="#E67E22"/>
+</svg>
